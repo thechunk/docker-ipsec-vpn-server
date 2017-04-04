@@ -6,7 +6,7 @@ ENV SWAN_BRANCH v3.20
 
 WORKDIR /opt/src
 
-# Install strongSwan
+# Install libreswan
 RUN mkdir -p /opt/src \
 	&& echo "deb http://free.nchc.org.tw/raspbian/raspbian jessie main contrib non-free rpi" >> /etc/apt/sources.list \
 	&& apt-get update && apt-get install -y --no-install-recommends git wget dnsutils openssl ca-certificates kmod iproute gawk grep sed net-tools iptables bsdmainutils libunbound2 libcurl3-nss libnss3-tools libevent-dev libcap-ng0 xl2tpd libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison gcc make libunbound-dev xmlto \
